@@ -116,7 +116,9 @@ def exe_alg(target):
     global n_generations 
     global n_sol_per_gen 
     global mutation_rate  
-    global elitism 
+    global elitism
+
+    reset_default_values()
 
     nchar = len(target)
     #adjust target in case of more / less cgaracters than expected
