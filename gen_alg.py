@@ -229,7 +229,7 @@ clear_screen()
 command = 'x'
 while command != 'exit':
     input_text = f"""\
-    Enter a target string (Max. nr. of characters {string_length} and lowercase) 
+    Enter a target string (Max. nr. of characters {STRING_LENGTH} and lowercase) 
     or 'menu' for more options
     or 'exit' to quit the program
     Your target string:"""
