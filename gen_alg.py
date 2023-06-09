@@ -11,7 +11,7 @@ bg_reset = '\033[0m'  # Reset to default background color
 # DEFAULT ALGRORITHM PARAMETERS
 STRING_LENGTH = 50          #length of target string
 N_GENERATIONS = 200         #number of generations
-N_SOL_PER_GEN = 1500       #number of solutions generated in a generation
+N_SOL_PER_GEN = 15000       #number of solutions generated in a generation
 MUTATION_RATE = 0.05        #need to check here
 ELITSM = 0.06               #% of selections that move to next generation unaltered
 
@@ -118,8 +118,6 @@ def exe_alg(target):
     global mutation_rate  
     global elitism
 
-    reset_default_values()
-
     nchar = len(target)
     #adjust target in case of more / less cgaracters than expected
     if nchar > string_length and nchar > STRING_LENGTH:      #truncate
@@ -224,7 +222,7 @@ def exe_alg(target):
 
         g +=1 # move to next generation
 
-    reset_default_values() 
+    mutation_rate = MUTATION_RATE
 
     input('Press ENTER')
     clear_screen()
