@@ -6,7 +6,7 @@ import textwrap
 
 bg_magenta = '\033[45m'
 bg_cyan = '\033[46m'
-bg_reset = '\033[0m'  # Reset to default background color
+bg_reset = '\033[0m'     # Reset to default background color
 
 # DEFAULT ALGRORITHM PARAMETERS
 STRING_LENGTH = 50          #length of target string
